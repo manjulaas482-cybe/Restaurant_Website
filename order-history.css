@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff8f0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.history-container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.order-card {
+    background: #fff8f0;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 5px solid #ff6600;
+}
+
+.order-card h3 {
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.order-card p {
+    margin: 7px 0;
+}
+
+.history-container > button {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #ff6600;
+    color: white;
+    cursor: pointer;
+}
+
+.history-container > button:hover {
+    background: #e65100;
+}
+/* ==========================
+   Order Status
+========================== */
+
+.order-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    padding: 15px;
+    background: #fff8f0;
+    border-radius: 12px;
+    gap: 10px;
+}
+
+.status {
+    flex: 1;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status span {
+    display: block;
+    margin-top: 6px;
+}
+
+.status.active {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+
+/* Next Status Button */
+
+.next-status-btn {
+    display: block;
+    margin: 15px auto 10px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #ff6600;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.next-status-btn:hover {
+    background: #e85c00;
+}
+
+.next-status-btn:disabled {
+    background: #777;
+    cursor: not-allowed;
+}
+
+
+/* Current Status */
+
+.current-status {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.current-status strong {
+    color: #ff6600;
+}
+
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width: 600px) {
+
+    .order-status {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .status {
+        width: 100%;
+    }
+
+}
