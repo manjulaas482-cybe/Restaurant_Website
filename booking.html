@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Table - Foodie's Restaurant</title>
+
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+
+    <div class="booking-container">
+
+        <h1>🍴 Foodie's Restaurant</h1>
+
+        <h2>Book Your Table</h2>
+
+        <p>Reserve your table and enjoy delicious food!</p>
+
+        <form id="bookingForm">
+
+            <input
+                type="text"
+                id="bookingName"
+                placeholder="Enter Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="bookingEmail"
+                placeholder="Enter Your Email"
+                required
+            >
+
+            <input
+                type="tel"
+                id="bookingPhone"
+                placeholder="Enter Phone Number"
+                required
+            >
+
+            <input
+                type="date"
+                id="bookingDate"
+                required
+            >
+
+            <input
+                type="time"
+                id="bookingTime"
+                required
+            >
+
+            <input
+                type="number"
+                id="guests"
+                placeholder="Number of Guests"
+                min="1"
+                max="20"
+                required
+            >
+
+            <button type="submit">
+                Book Table
+            </button>
+
+        </form>
+
+        <button class="back-btn" onclick="window.location.href='index.html'">
+            ← Back to Home
+        </button>
+
+    </div>
+
+    <script src="booking.js"></script>
+
+</body>
+</html>
